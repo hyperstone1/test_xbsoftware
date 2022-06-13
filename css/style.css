@@ -1,0 +1,209 @@
+@import url(nullstyle.css);
+body {
+  background-color: #c9d1d9;
+  font-family: 'Gentium Plus', sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  width: 50%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.wrapper .menu {
+  position: relative;
+  width: 100%;
+}
+.wrapper .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 0;
+}
+.wrapper .menu ul li {
+  list-style-type: none;
+  padding: 5px;
+  border: 1px solid #6078bb;
+  color: #fff;
+  background-color: #2f4b95;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.wrapper .menu ul li:hover {
+  opacity: 0.7;
+}
+.wrapper .inp {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1 1;
+  padding: 5px;
+}
+.wrapper .buttons {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.wrapper .buttons .btn {
+  position: relative;
+  width: 90px;
+  height: 30px;
+  float: left;
+  margin-top: 20px;
+  border: 1px solid rgb(141, 127, 127);
+  border-radius: 5px;
+  background-color: rgb(128, 219, 123);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.wrapper .buttons .btn:hover {
+  background-color: rgb(210, 184, 184);
+  color: #fff;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.wrapper .buttons .btn:active {
+  opacity: 0.5;
+  background-color: rgb(212, 59, 59);
+  -webkit-transition: background-color, opacity 2s ease-in-out;
+  transition: background-color, opacity 2s ease-in-out;
+}
+.wrapper .buttons .add-to-list {
+  background-color: #6078bb;
+}
+.wrapper .disable {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.wrapper .active {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  opacity: 1;
+  overflow: auto;
+}
+
+input[type='text'] {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+}
+
+.tag {
+  position: relative;
+  background-color: #efeff0;
+  display: inline-block;
+  border-radius: 6px;
+  border: 1px solid #b1adad;
+  padding: 6px 12px;
+  margin: 4px;
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 600;
+  color: #62646a;
+}
+
+.ul-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgb(247, 210, 210);
+  border-radius: 4px;
+  padding: 5px 5px;
+}
+.ul-span .preview-remove {
+  position: relative;
+  top: 1px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.ul-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 70%;
+}
+.ul-list h1 {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  color: #6078bb;
+  text-align: center;
+  border-bottom: 2px solid #9b9b9b;
+}
+.ul-list .tags {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.ul-list .tags .tag-li {
+  background-color: #efeff0;
+  padding: 0px 7px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #abaaaa;
+}
+.ul-list .tags .tag-li .preview-remove {
+  display: inline-block;
+  float: right;
+  font-size: 26px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.ul-list .tags .tag-li .active {
+  overflow: visible;
+}
